@@ -8,6 +8,7 @@ packages = [{include = "cookie_clicker_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+selenium = "^4.7.2"
 
 
 [tool.poetry.group.dev.dependencies]
