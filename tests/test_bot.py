@@ -96,3 +96,10 @@ def test_bot_does_not_perform_clicks_when_duration_and_delay_are_invalid(
     title_after = bot.browser.title
 
     assert title_before == title_after
+
+
+def test_get_performance(bot: CookieBot) -> None:
+    cookies_per_second = bot.browser.find_element(By.ID, 'cps').text
+    performance_info = f'\nFinal performance:\n- {cookies_per_second}\n'
+
+    assert bot.get_performance_info() == performance_info

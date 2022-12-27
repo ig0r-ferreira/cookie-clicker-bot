@@ -62,6 +62,10 @@ class CookieBot:
     def _click_on_cookie(self) -> None:
         self.cookie.click()
 
+    def get_performance_info(self) -> str:
+        cookies_per_second = self.browser.find_element(By.ID, 'cps').text
+        return f'\nFinal performance:\n- {cookies_per_second}\n'
+
     def run(self, duration: timedelta, upgrade_delay: int = 5) -> None:
         if duration.total_seconds() <= 0 or upgrade_delay <= 0:
             return
