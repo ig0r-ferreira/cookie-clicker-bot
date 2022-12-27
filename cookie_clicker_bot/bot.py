@@ -23,8 +23,8 @@ def format_price(price: str) -> str:
 class CookieBot:
     def __init__(self, browser: WebDriver) -> None:
         self.browser = browser
-        self.browser.get(COOKIE_GAME_URL)
         self.browser.maximize_window()
+        self.browser.get(COOKIE_GAME_URL)
 
         cookie_locator, store_locator = (By.ID, 'cookie'), (By.ID, 'store')
         self._wait_elements(10, cookie_locator, store_locator)
