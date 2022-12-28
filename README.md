@@ -8,7 +8,7 @@ Auto click bot for [Cookie Clicker](https://orteil.dashnet.org/experiments/cooki
 ## Requirements
 
 - Python version 3.10.6 or higher installed.
-- Download ChromeDriver: https://chromedriver.chromium.org/downloads
+- Download ChromeDriver: https://chromedriver.chromium.org/downloads and add the path to the executable to the PATH environment variable.
 
 ## How to install
 
