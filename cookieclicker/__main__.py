@@ -2,7 +2,7 @@ from datetime import timedelta
 
 from selenium import webdriver
 
-from cookie_clicker_bot.bot import CookieBot
+from cookieclicker.bot import CookieBot
 
 
 def main() -> None:

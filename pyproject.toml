@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "cookie-clicker-bot"
+name = "cookieclicker"
 version = "0.1.0"
 description = "Auto click bot for Cookie Clicker online game."
 authors = ["Igor Ferreira <iferreira.n01@gmail.com>"]
 readme = "README.md"
-packages = [{include = "cookie_clicker_bot"}]
+packages = [{include = "cookieclicker"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -19,6 +19,9 @@ isort = "^5.11.4"
 mypy = "^0.991"
 pytest = "^7.2.0"
 coverage = "^7.0.1"
+
+[tool.poetry.scripts]
+cookieclicker = 'cookieclicker.__main__:main'
 
 [build-system]
 requires = ["poetry-core"]
